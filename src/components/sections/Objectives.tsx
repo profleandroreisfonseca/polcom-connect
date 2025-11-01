@@ -36,10 +36,10 @@ const Objectives = () => {
           {objectives.map((objective, index) => (
             <div
               key={index}
-              className="group p-8 rounded-2xl bg-card shadow-card hover:shadow-elevated transition-smooth border border-border"
+              className="group p-8 rounded-2xl bg-card shadow-elevated hover:shadow-elevated hover:scale-105 transition-smooth border-2 border-primary/40 hover:border-primary"
             >
-              <div className="w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center mb-6 group-hover:scale-110 transition-smooth">
-                <objective.icon className="w-7 h-7 text-primary-foreground" />
+              <div className="w-16 h-16 rounded-2xl bg-gradient-primary flex items-center justify-center mb-6 group-hover:scale-110 transition-smooth shadow-lg shadow-primary/50">
+                <objective.icon className="w-8 h-8 text-primary-foreground" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-foreground">{objective.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{objective.description}</p>

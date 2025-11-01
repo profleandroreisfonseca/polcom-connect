@@ -49,9 +49,9 @@ const TechnicalService = () => {
 
         {/* Objective and Justification */}
         <div className="max-w-5xl mx-auto mb-16 grid md:grid-cols-2 gap-6">
-          <div className="p-8 rounded-2xl bg-card shadow-card border border-border">
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-              <Settings className="w-6 h-6 text-primary" />
+          <div className="p-8 rounded-2xl bg-card shadow-elevated border-2 border-primary/50 hover:border-primary hover:scale-105 transition-smooth">
+            <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center mb-4 shadow-lg shadow-primary/50">
+              <Settings className="w-6 h-6 text-primary-foreground" />
             </div>
             <h3 className="text-xl font-bold mb-4 text-foreground">Objetivo</h3>
             <p className="text-muted-foreground leading-relaxed">
@@ -60,9 +60,9 @@ const TechnicalService = () => {
             </p>
           </div>
           
-          <div className="p-8 rounded-2xl bg-card shadow-card border border-accent/20">
-            <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-4">
-              <Shield className="w-6 h-6 text-accent" />
+          <div className="p-8 rounded-2xl bg-card shadow-elevated border-2 border-accent/50 hover:border-accent hover:scale-105 transition-smooth">
+            <div className="w-12 h-12 rounded-xl bg-gradient-accent flex items-center justify-center mb-4 shadow-lg shadow-accent/50">
+              <Shield className="w-6 h-6 text-accent-foreground" />
             </div>
             <h3 className="text-xl font-bold mb-4 text-foreground">Justificativa</h3>
             <p className="text-muted-foreground leading-relaxed">
@@ -79,9 +79,9 @@ const TechnicalService = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="group p-6 rounded-xl bg-card shadow-card border border-border hover:shadow-elevated hover:border-primary/30 transition-smooth"
+                className="group p-6 rounded-xl bg-card shadow-elevated border-2 border-secondary/40 hover:border-secondary hover:shadow-elevated hover:scale-105 transition-smooth"
               >
-                <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-smooth">
+                <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-smooth shadow-lg shadow-primary/50">
                   <service.icon className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <h4 className="font-bold mb-2 text-foreground">{service.title}</h4>
@@ -93,22 +93,22 @@ const TechnicalService = () => {
 
         {/* Key Benefits */}
         <div className="max-w-4xl mx-auto mt-16">
-          <div className="p-8 rounded-2xl bg-primary/5 border border-primary/20">
-            <h3 className="text-xl font-bold mb-6 text-center text-foreground">
+          <div className="p-8 rounded-2xl bg-gradient-accent border-2 border-accent shadow-lg shadow-accent/30">
+            <h3 className="text-xl font-bold mb-6 text-center text-accent-foreground">
               Garantias do Serviço Técnico
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">99.9%</div>
-                <div className="text-sm text-muted-foreground">Uptime Garantido</div>
+                <div className="text-4xl font-black text-white mb-2 drop-shadow-lg">99.9%</div>
+                <div className="text-sm text-accent-foreground/90 font-medium">Uptime Garantido</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-                <div className="text-sm text-muted-foreground">Monitoramento</div>
+                <div className="text-4xl font-black text-white mb-2 drop-shadow-lg">24/7</div>
+                <div className="text-sm text-accent-foreground/90 font-medium">Monitoramento</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">100%</div>
-                <div className="text-sm text-muted-foreground">Conformidade Legal</div>
+                <div className="text-4xl font-black text-white mb-2 drop-shadow-lg">100%</div>
+                <div className="text-sm text-accent-foreground/90 font-medium">Conformidade Legal</div>
               </div>
             </div>
           </div>
